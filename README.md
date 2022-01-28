@@ -10,7 +10,7 @@ Run attacks against DBS-KE [DBS19]:
 - run `python3 imp-dbs-ke-pv.py 512`
 - for comparing with the attack [BSV2021], run `python3 compare-dbs-ke.py`
 
-Run an attack against LBA-PAKE [DBK]:
+Run an attack against LBA-PAKE [DBK2021]:
 - `make CFLAGS="-DVERS=20"`
 - run `python3 imp-lbapake-pv.py`
 
@@ -29,4 +29,4 @@ Report 2019/665 (2019)
 [BSV2021] Bindel, N., Stebila, D., Veitch, S.: Improved attacks against key reuse in learning
 with errors key exchange. In: LATINCRYPT 2021. LNCS, Springer (2021)
 
-[DBK] V. Dabra, A. Bala and S. Kumari, "LBA-PAKE: Lattice-Based Anonymous Password Authenticated Key Exchange for Mobile Devices," in IEEE Systems Journal, vol. 15, no. 4, pp. 5067-5077, Dec. 2021
+[DBK2021] V. Dabra, A. Bala and S. Kumari, "LBA-PAKE: Lattice-Based Anonymous Password Authenticated Key Exchange for Mobile Devices," in IEEE Systems Journal, vol. 15, no. 4, pp. 5067-5077, Dec. 2021
