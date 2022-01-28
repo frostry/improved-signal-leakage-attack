@@ -11,7 +11,7 @@ Run attacks against DBS-KE [DBS19]:
 - for comparing with the attack [BSV21], run `python3 compare-dbs-ke.py`
 
 Run an attack against LBA-PAKE [DBK21]:
-- `make CFLAGS="-DVERS=20"`
+- `make CFLAGS="-DVERS=21"`
 - run `python3 imp-lbapake-pv.py`
 
 
