@@ -26,7 +26,7 @@ on the Learning with Errors Problem. Cryptology ePrint Archive, Report 2019/688
 with Reusable Keys Based on RLWE Assumption. Cryptology ePrint Archive,
 Report 2019/665 (2019)
 
-[BSV2021] Bindel, N., Stebila, D., Veitch, S.: Improved attacks against key reuse in learning
+[BSV21] Bindel, N., Stebila, D., Veitch, S.: Improved attacks against key reuse in learning
 with errors key exchange. In: LATINCRYPT 2021. LNCS, Springer (2021)
 
-[DBK2021] V. Dabra, A. Bala and S. Kumari, "LBA-PAKE: Lattice-Based Anonymous Password Authenticated Key Exchange for Mobile Devices," in IEEE Systems Journal, vol. 15, no. 4, pp. 5067-5077, Dec. 2021
+[DBK21] V. Dabra, A. Bala and S. Kumari, "LBA-PAKE: Lattice-Based Anonymous Password Authenticated Key Exchange for Mobile Devices," in IEEE Systems Journal, vol. 15, no. 4, pp. 5067-5077, Dec. 2021
