@@ -2,7 +2,7 @@
 
 This software implements a signal leakage attack against the protocols DXL [DXL12], DBS [DBS19], and LBA-PAKE [DBK21].
 
-The attack is in line with Fluhrers attack [Flu16] that has been improved by Ding, Alsayigh, Saraswathy, Fluhrer, and Lin [DAS+17] and Bindel,Stebila and Veitch [BSV21] and improves upon them further. More concretely, it views signals as binary codes, enabling a 'target signal extration' approach. Our results caution against underestimating the power of signal leakage attacks.
+The attack is in line with Fluhrers attack [Flu16] that has been improved by Ding, Alsayigh, Saraswathy, Fluhrer, and Lin [DAS+17] and Bindel, Stebila, and Veitch [BSV21] and improves upon them further. More concretely, it views signals as binary codes, enabling a 'target signal extration' approach. Our results caution against underestimating the power of signal leakage attacks.
 
 Run attacks against DXL [DXL12]:
 - `make`
