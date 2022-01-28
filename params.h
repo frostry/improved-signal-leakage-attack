@@ -49,7 +49,7 @@
     #error "N must be one of 128,256,512,1024"
     #endif
 
-#elif (VERS == 20)
+#elif (VERS == 21)
     #define NEWHOPE_N 512
     #define NEWHOPE_Q 7557773
     #define STDDEV 319215
@@ -58,7 +58,7 @@
     #define NEWHOPE_MUL 5810857
     
 #else
-#error "VERS must be one of 12 or 19"
+#error "VERS must be one of 12 or 19 or 21"
 #endif
 
 #endif
