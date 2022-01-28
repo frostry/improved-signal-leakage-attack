@@ -3,14 +3,14 @@
 Run attacks against DXL [DXL12]:
 - `make`
 - `python3 imp-dxl-pv.py`
-- for comparing with the attack [BSV2021], run `python3 compare-dxl.py`
+- for comparing with the attack [BSV21], run `python3 compare-dxl.py`
 
 Run attacks against DBS-KE [DBS19]:
 - `make CFLAGS="-DVERS=19 -DN=512 -DSTDDEV=41915"`
 - run `python3 imp-dbs-ke-pv.py 512`
-- for comparing with the attack [BSV2021], run `python3 compare-dbs-ke.py`
+- for comparing with the attack [BSV21], run `python3 compare-dbs-ke.py`
 
-Run an attack against LBA-PAKE [DBK2021]:
+Run an attack against LBA-PAKE [DBK21]:
 - `make CFLAGS="-DVERS=20"`
 - run `python3 imp-lbapake-pv.py`
 
