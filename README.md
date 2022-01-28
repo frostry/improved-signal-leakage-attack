@@ -1,4 +1,4 @@
-# The Implementations of Improved Signal Leakage Attack using Targeted Signal Extraction
+# Signal Leakage Attack using Targeted Signal Extraction
 
 This software implements a signal leakage attack against the protocols DXL [DXL12], DBS [DBS19], and LBA-PAKE [DBK21].
 
