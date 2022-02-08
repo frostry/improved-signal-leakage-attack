@@ -18,7 +18,7 @@ Run an attack against LBA-PAKE [DBK21]:
 - `make CFLAGS="-DVERS=21"`
 - run `python3 imp-lbapake-pv.py`
 
-For Quantum2FA [WWCH21], we modify the code of [Newhope](https://github.com/newhopecrypto/newhope) to simulate the attack. To run it:
+For Quantum2FA [WWC+21], we modify the code of [Newhope](https://github.com/newhopecrypto/newhope) to simulate the attack. To run it:
 - `cd Quantum2FA`
 - `make && ./test_cpakem512`
 
@@ -36,4 +36,4 @@ For Quantum2FA [WWCH21], we modify the code of [Newhope](https://github.com/newh
 
 [Flu16] Fluhrer, S.R.: Cryptanalysis of ring-LWE based key exchange with key share reuse. Cryptology ePrint Archive, Report 2016/085 (2016)
 
-[WWCH21] Q. Wang, D. Wang, C. Cheng and D. He, "Quantum2FA: Efficient Quantum-Resistant Two-Factor Authentication Scheme for Mobile Devices," in IEEE Transactions on Dependable and Secure Computing,
+[WWC+21] Q. Wang, D. Wang, C. Cheng and D. He, "Quantum2FA: Efficient Quantum-Resistant Two-Factor Authentication Scheme for Mobile Devices," in IEEE Transactions on Dependable and Secure Computing,
