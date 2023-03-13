@@ -261,13 +261,13 @@ def improvesla(n, q, sB, wk):
 
 
 if __name__ == "__main__":
-    if not (int(argv[1]) in [0,1,2,3]):
+    if not (int(argv[1]) in [128,256,512,1024]):
         print("error argv", argv[1])
         exit()
-    wk = int(argv[1])    # which parameters we use
-    n = [128, 256, 512, 1024]
+    n = int(argv[1])    # which parameters we use
+    wk = {128:0, 256:1, 512:2, 1024:3}
     allnq = {128:2255041, 256:9205761, 512:26038273, 1024:28434433}
-    n = n[wk] 
+    #n = n[wk] 
     q = allnq[n]
     sigma = 4.19
     print("parameters: n = {:d}, q = {:d}, sigma = {:f}".format(n, q, sigma))
@@ -296,7 +296,7 @@ if __name__ == "__main__":
        
         print("sB = \n", sB)
         print("max s is {}".format( max(map(abs, sB))))
-        succ, query = improvesla(n, q, sB, wk)
+        succ, query = improvesla(n, q, sB, wk[n])
         end = time.time()
         if succ != False:
             seconds = end - start
