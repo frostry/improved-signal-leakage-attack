@@ -35,7 +35,7 @@ class Ding19(object):
     @staticmethod
     def sig(q, v):
         # v = v % q
-        if v > round(q / 4.0) and v < q - math.floor(q / 4):
+        if v > math.floor(q / 4.0 + 0.5) and v < q - math.floor(q / 4):
             return 1
         else:
             return 0

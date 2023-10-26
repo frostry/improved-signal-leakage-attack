@@ -39,7 +39,7 @@ class Ding12(object):
     @staticmethod
     def sig(q, v):
         # v = v % q
-        if v > round(q / 4.0) and v < q - math.floor(q / 4):
+        if v > math.floor(q / 4.0 + 0.5) and v < q - math.floor(q / 4):
             return 1
         else:
             return 0
@@ -79,7 +79,7 @@ class Ding12(object):
 def getabs_sBp(n, q, sB, signals, l, param):
     def sig(v):
         v = v % q
-        return 1 if (v > round(q / 4.0) and v < q - math.floor(q / 4)) else 0
+        return 1 if (v > math.floor(q / 4.0 + 0.5) and v < q - math.floor(q / 4)) else 0
             
     def inornot(list):
         def foo(a):
@@ -280,7 +280,7 @@ if __name__ == "__main__":
     t = 100
     alltime = 0
     succ = 0
-    count = 100
+    count = 10
     print("parameters: n = {:d}, q = {:d}, sigma = {:f}".format(n, q, sigma))
 
     global query
