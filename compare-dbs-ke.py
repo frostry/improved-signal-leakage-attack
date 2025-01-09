@@ -7,7 +7,8 @@ from ctypes import *
 import cProfile
 import time
 from itertools import repeat
-from multiprocessing import Pool
+from multiprocessing import Pool, set_start_method
+import platform
 
 # https://eprint.iacr.org/2019/665.pdf
 class Ding19(object):
@@ -238,6 +239,9 @@ if __name__ == "__main__":
     t1 = 434000
     t2 = 220000
     print("parameters: n = {:d}, q = {:d}, sigma = {:f}".format(n, q, sigma))
+
+    if platform.system() == 'Darwin':
+        set_start_method("fork")
 
     c = 1
     alltime = 0

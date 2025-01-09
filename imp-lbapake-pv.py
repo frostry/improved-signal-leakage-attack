@@ -5,8 +5,8 @@ from ctypes import *
 # import cProfile
 import time
 from itertools import repeat
-from multiprocessing import Pool
-# , Process, Queue
+from multiprocessing import Pool, set_start_method
+import platform
 import secrets
 
 class Ding19(object):
@@ -316,11 +316,12 @@ if __name__ == "__main__":
     q = 7557773
     sigma = 3.192 
     print("parameters: n = {:d}, q = {:d}, sigma = {:f}".format(n, q, sigma))
-
     print("======================")
+
+    if platform.system() == 'Darwin':
+        set_start_method("fork")
     
     c = 1
-
     alltime = 0
     allq = 0
     for seed in range(c):
